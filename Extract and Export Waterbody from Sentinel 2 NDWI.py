@@ -27,7 +27,6 @@ vis_params_truecolor = {
 
 # Add layers to map
 Map.addLayer(median_composite, vis_params_truecolor, 'True Color')
-Map.centerObject(median_composite)
 
 # Calculate NDWI (Normalized Difference Water Index)
 # NDWI = (Green - NIR) / (Green + NIR)
@@ -81,4 +80,5 @@ geemap.ee_to_shp(
 print(f"Water bodies exported to: {shapefile_path}")
 
 # Load exported shapefile to Map
+
 iface.addVectorLayer(shapefile_path, "Water", "ogr")
