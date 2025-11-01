@@ -1,6 +1,5 @@
 # Import libraries
 import ee
-import geemap
 from ee_plugin import Map
 
 # Initialize the Earth Engine API
@@ -29,3 +28,4 @@ Map.centerObject(selected_state, 7)
 
 # Optional: print info about the selected state
 print(f"Loaded boundary for: {selected_state_name}")
+
